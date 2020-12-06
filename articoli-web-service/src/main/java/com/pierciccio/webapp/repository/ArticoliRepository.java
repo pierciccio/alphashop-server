@@ -1,14 +1,12 @@
 package com.pierciccio.webapp.repository;
 
-import java.util.List;
-
+import com.pierciccio.webapp.entity.Articoli;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 
-import com.pierciccio.webapp.entity.Articoli;
-
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.Query;
+import java.util.List;
 
 public interface ArticoliRepository  extends PagingAndSortingRepository<Articoli, String>
 {

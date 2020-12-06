@@ -56,7 +56,7 @@ feign:
       enabled: true
 
 # ==============================================================
-# = Configurazione levello di Log PriceClient
+# = Configurazione livello di Log PriceClient
 # ==============================================================      
 logging:
   level:

@@ -1,9 +1,11 @@
 package com.pierciccio.webapp.controller;
 
- 
-import java.util.List;
-import java.util.UUID;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.pierciccio.webapp.entities.Promo;
+import com.pierciccio.webapp.exception.PromoNotFoundException;
+import com.pierciccio.webapp.service.PromoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,24 +13,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
- 
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
- 
+import org.springframework.web.bind.annotation.*;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.pierciccio.webapp.entities.Articoli;
-import com.pierciccio.webapp.entities.Promo;
-import com.pierciccio.webapp.exception.PromoNotFoundException;
-import com.pierciccio.webapp.service.PromoService;
+import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "api/promo")
@@ -110,8 +98,12 @@ public class PromoController
 			for (Promo promozione : promo)
 			{
 				
-				promozione.getDettPromo().forEach(f -> f.setDescrizione(articoliClient.getArticolo(f.getCodart()).getDescrizione()));
-				promozione.getDettPromo().forEach(f -> f.setPrezzo(articoliClient.getArticolo(f.getCodart()).getPrezzo()));
+				promozione
+						.getDettPromo()
+						.forEach(f -> f.setDescrizione(articoliClient.getArticolo(f.getCodart()).getDescrizione()));
+				promozione
+						.getDettPromo()
+						.forEach(f -> f.setPrezzo(articoliClient.getArticolo(f.getCodart()).getPrezzo()));
 			}
 		
 		}

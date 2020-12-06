@@ -1,14 +1,12 @@
 package com.pierciccio.webapp.service;
 
-import java.util.List;
-
-import javax.transaction.Transactional;
-
+import com.pierciccio.webapp.entities.Promo;
+import com.pierciccio.webapp.repository.PromoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pierciccio.webapp.entities.Promo;
-import com.pierciccio.webapp.repository.PromoRepository;
+import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 @Transactional

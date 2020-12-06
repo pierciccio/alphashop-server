@@ -1,12 +1,11 @@
 package com.pierciccio.webapp.repository;
 
- 
+
+import com.pierciccio.webapp.entity.DettListini;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-
-import com.pierciccio.webapp.entity.DettListini;
 
 public interface PrezziRepository extends JpaRepository<DettListini, Long>
 {

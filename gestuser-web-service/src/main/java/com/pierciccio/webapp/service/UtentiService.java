@@ -1,9 +1,9 @@
 package com.pierciccio.webapp.service;
 
+import com.pierciccio.webapp.model.Utenti;
+
 import java.util.List;
 
-import com.pierciccio.webapp.model.Utenti;
- 
 public interface UtentiService
 {
 	public List<Utenti> SelTutti();

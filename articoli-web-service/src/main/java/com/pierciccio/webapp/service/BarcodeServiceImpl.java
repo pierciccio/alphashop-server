@@ -1,11 +1,10 @@
 package com.pierciccio.webapp.service;
 
+import com.pierciccio.webapp.entity.Barcode;
+import com.pierciccio.webapp.repository.BarcodeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.pierciccio.webapp.entity.Barcode;
-import com.pierciccio.webapp.repository.BarcodeRepository;
 
 @Service
 @Transactional(readOnly = true)

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/articoli-web-service/articoli-web-service.iml" filepath="$PROJECT_DIR$/articoli-web-service/articoli-web-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth-server-jwt/auth-server-jwt.iml" filepath="$PROJECT_DIR$/auth-server-jwt/auth-server-jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestuser-web-service/gestuser-web-service.iml" filepath="$PROJECT_DIR$/gestuser-web-service/gestuser-web-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/priceart-web-service/priceart-web-service.iml" filepath="$PROJECT_DIR$/priceart-web-service/priceart-web-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/promo-web-service/promo-web-service.iml" filepath="$PROJECT_DIR$/promo-web-service/promo-web-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/server.iml" filepath="$PROJECT_DIR$/.idea/server.iml" />
+    </modules>
+  </component>
+</project>

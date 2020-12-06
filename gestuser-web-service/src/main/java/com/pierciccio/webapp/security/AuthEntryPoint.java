@@ -1,13 +1,12 @@
 package com.pierciccio.webapp.security;
 
-import java.io.IOException;
-import java.io.PrintWriter;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class AuthEntryPoint extends BasicAuthenticationEntryPoint
 {

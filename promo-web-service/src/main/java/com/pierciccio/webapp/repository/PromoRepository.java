@@ -1,12 +1,11 @@
 package com.pierciccio.webapp.repository;
 
-import java.util.List;
-
+import com.pierciccio.webapp.entities.Promo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.pierciccio.webapp.entities.Promo;
+import java.util.List;
 
 @Repository
 public interface PromoRepository extends JpaRepository<Promo, String>

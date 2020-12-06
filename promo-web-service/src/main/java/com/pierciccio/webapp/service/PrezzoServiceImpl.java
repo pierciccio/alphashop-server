@@ -1,14 +1,13 @@
 package com.pierciccio.webapp.service;
 
-import javax.transaction.Transactional;
-
+import com.pierciccio.webapp.entities.DettPromo;
+import com.pierciccio.webapp.repository.PrezziPromoRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
- 
-import com.pierciccio.webapp.entities.DettPromo;
-import com.pierciccio.webapp.repository.PrezziPromoRepository;
+
+import javax.transaction.Transactional;
 
 @Service
 @Transactional

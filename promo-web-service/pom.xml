@@ -12,11 +12,11 @@
 	<artifactId>promo-web-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>promo-web-service</name>
-	<description>Microservice per Promozioni</description>
+	<description>Microservice per la gestione delle promozioni</description>
 
 	<properties>
 		<java.version>11</java.version>
-		<spring-cloud.version>2020.0.0-M5</spring-cloud.version>
+		<spring-cloud.version>2020.0.0-M6</spring-cloud.version>
 	</properties>
 
 	<dependencies>
@@ -26,11 +26,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-validation</artifactId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -62,6 +62,11 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -69,17 +74,6 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt</artifactId>
-			<version>0.9.1</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

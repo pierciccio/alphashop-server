@@ -1,15 +1,10 @@
 package com.pierciccio.webapp.repository;
 
- 
-import java.util.List;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 
 import com.pierciccio.webapp.entities.DettPromo;
-import com.pierciccio.webapp.entities.Promo;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 public interface PrezziPromoRepository extends JpaRepository<DettPromo, Long>
 {

@@ -1,13 +1,12 @@
 package com.pierciccio.webapp.service;
 
-import java.util.List;
-
+import com.pierciccio.webapp.model.Utenti;
 import com.pierciccio.webapp.repository.UtentiRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.pierciccio.webapp.model.Utenti;
+import java.util.List;
 
 @Service
 @Transactional(readOnly = true)

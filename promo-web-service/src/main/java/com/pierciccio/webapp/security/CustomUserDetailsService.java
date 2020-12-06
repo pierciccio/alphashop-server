@@ -1,8 +1,5 @@
 package com.pierciccio.webapp.security;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +10,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
+import java.net.URI;
+import java.net.URISyntaxException;
 
 @Service("customUserDetailsService")
 public class CustomUserDetailsService implements UserDetailsService

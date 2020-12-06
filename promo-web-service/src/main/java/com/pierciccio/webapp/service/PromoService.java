@@ -1,8 +1,8 @@
 package com.pierciccio.webapp.service;
- 
-import java.util.List;
 
 import com.pierciccio.webapp.entities.Promo;
+
+import java.util.List;
 
 public interface PromoService 
 {

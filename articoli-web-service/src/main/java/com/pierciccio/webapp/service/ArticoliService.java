@@ -1,10 +1,9 @@
 package com.pierciccio.webapp.service;
 
-import java.util.List;
-
+import com.pierciccio.webapp.entity.Articoli;
 import org.springframework.data.domain.Pageable;
 
-import com.pierciccio.webapp.entity.Articoli;
+import java.util.List;
 
 public interface ArticoliService 
 {

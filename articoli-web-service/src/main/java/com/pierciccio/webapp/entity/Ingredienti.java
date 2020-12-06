@@ -1,17 +1,10 @@
 package com.pierciccio.webapp.entity;
 
-import java.io.Serializable;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.Table;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import lombok.Data;
+
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "INGREDIENTI")
